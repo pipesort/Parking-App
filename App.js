@@ -36,6 +36,7 @@ export default function App() {
             ),
           }}
         />
+        
         <Tab.Screen
           name="Settings"
           component={AccountPage}
