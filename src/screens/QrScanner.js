@@ -1,22 +1,24 @@
 import React, {Component} from 'react';
-import {SafeAreaView, Text, StyleSheet,Alert} from 'react-native';
+import {SafeAreaView, Text, StyleSheet, Alert} from 'react-native';
 import {QRScannerRectView} from 'react-native-qrcode-scanner-view';
 
 import {RNCamera} from 'react-native-camera';
 
-class CodeScan extends Component {
+function QRScanner() {
+  const renderTitleBar = () => <Text>Title</Text>;
 
-  renderTitleBar = () => <Text>Title</Text>;
-
-  renderMenu = () => (
+  const renderMenu = () => (
     <Text style={{color: 'white', textAlign: 'center', padding: 16}}>Menu</Text>
   );
-  barcodeReceived = event => {
+  const barcodeReceived = event => {
     Alert.alert(
       'Alert Title',
       'My Alert Msg',
       [
-        {text: 'Ask me later', onPress: () => console.log('Ask me later pressed')},
+        {
+          text: 'Ask me later',
+          onPress: () => console.log('Ask me later pressed'),
+        },
         {
           text: 'Cancel',
           onPress: () => console.log('Cancel Pressed'),
@@ -28,22 +30,17 @@ class CodeScan extends Component {
     );
   };
 
-  render() {
-    return (
-      <SafeAreaView style={{flex: 1}}>
-        <RNCamera
-          style={styles.preview}
-          onBarCodeRead={this.barcodeReceived}
-          renderFooterView={this.renderMenu}
-          scanBarAnimateReverse>
-          <QRScannerRectView
-            renderHeaderView={this.renderTitleBar}
-            hintText="scan"
-          />
-        </RNCamera>
-      </SafeAreaView>
-    );
-  }
+  return (
+    <SafeAreaView style={{flex: 1}}>
+      <RNCamera
+        style={styles.preview}
+        onBarCodeRead={barcodeReceived}
+        renderFooterView={renderMenu}
+        scanBarAnimateReverse>
+        <QRScannerRectView renderHeaderView={renderTitleBar} hintText="Scan" />
+      </RNCamera>
+    </SafeAreaView>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -56,4 +53,4 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
-export default CodeScan;
+export default QRScanner;
