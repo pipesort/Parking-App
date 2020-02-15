@@ -3,8 +3,8 @@ import {View, Text} from 'react-native';
 
 function ReceiptPage() {
   return (
-    <View>
-      <Text>ReceiptPage</Text>
+    <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
+      <Text>Receipt Page</Text>
     </View>
   );
 }

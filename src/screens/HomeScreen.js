@@ -3,13 +3,13 @@ import {Text, View, TouchableOpacity, ImageBackground} from 'react-native';
 import {useDispatch} from 'react-redux';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-function HomeScreen() {
+function HomeScreen({navigation}) {
   const dispatch = useDispatch();
   return (
     <ImageBackground
       source={{
         uri:
-          'https://images.wallpaperscraft.com/image/escalator_stairs_underground_122792_938x1668.jpg',
+          'https://images.wallpaperscraft.com/image/escalator_lights_stairs_131787_938x1668.jpg',
       }}
       style={{width: '100%', height: '100%', borderRadius: 20}}>
       <View

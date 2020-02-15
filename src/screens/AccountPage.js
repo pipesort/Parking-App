@@ -3,8 +3,8 @@ import {View, Text} from 'react-native';
 
 function AccountPage() {
   return (
-    <View>
-      <Text>AccountPage</Text>
+    <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
+      <Text>Account Page</Text>
     </View>
   );
 }

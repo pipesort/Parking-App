@@ -10,75 +10,44 @@ import {
   ImageBackground,
 } from 'react-native';
 import {QRScannerRectView} from 'react-native-qrcode-scanner-view';
-import Modal from 'react-native-modal';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {RNCamera} from 'react-native-camera';
 import {useDispatch} from 'react-redux';
 
-function QRScanner() {
-  const [isOpen, setOpen] = useState(true);
-  const [isBike, setBike] = useState(false);
-  const [isCar, setCar] = useState(false);
+function QRScanner({navigation}) {
   const dispatch = useDispatch();
+
   const barcodeReceived = event => {
-    Alert.alert(
-      'Alert Title',
-      'My Alert Msg',
-      [
-        {
-          text: 'Ask me later',
-          onPress: () => console.log('Ask me later pressed'),
-        },
-        {
-          text: 'Cancel',
-          onPress: () => console.log('Cancel Pressed'),
-          style: 'cancel',
-        },
-        {text: 'OK', onPress: () => console.log('OK Pressed')},
-      ],
-      {cancelable: false},
-    );
+    navigation.navigate('Receipt');
   };
 
   return (
     <SafeAreaView style={{flex: 1}}>
-
-          <>
-            <RNCamera
-              style={styles.preview}
-              onBarCodeRead={barcodeReceived}
-              scanBarAnimateReverse>
-              <QRScannerRectView hintText="Bike" />
-              <TouchableOpacity
-                onPress={() => {
-                  setOpen(!isOpen);
-                  setBike(isBike);
-                  setCar(isCar);
-                  dispatch({type: 'HOME'});
-                }}>
-                <View
-                  style={{
-                    backgroundColor: '#595757',
-                    height: 40,
-                    width: '30%',
-                    borderRadius: 10,
-                    marginBottom: 20,
-                    marginLeft: 140,
-                    marginRight: 140,
-                  }}>
-                  <Text
-                    style={{
-                      color: 'black',
-                      fontSize: 25,
-                      textAlign: 'center',
-                      color: 'white',
-                    }}>
-                    Home
-                  </Text>
-                </View>
-              </TouchableOpacity>
-            </RNCamera>
-          </>
-        
+      <>
+        <RNCamera
+          style={styles.preview}
+          onBarCodeRead={barcodeReceived}
+          scanBarAnimateReverse>
+          <QRScannerRectView hintText="" />
+          <TouchableOpacity
+            onPress={() => {
+              dispatch({type: 'HOME'});
+            }}>
+            <View
+              style={{
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginBottom: 10,
+                flexDirection: 'row',
+              }}>
+              <MaterialCommunityIcons name="home" color={'white'} size={20} />
+              <Text style={{color: 'white', fontSize: 20, fontWeight: 'bold'}}>
+                Back
+              </Text>
+            </View>
+          </TouchableOpacity>
+        </RNCamera>
+      </>
     </SafeAreaView>
   );
 }

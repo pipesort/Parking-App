@@ -34,9 +34,9 @@ export default function App() {
         <NavigationContainer>
           <Tab.Navigator
             initialRouteName="Home"
-            activeColor="#f0edf6"
-            inactiveColor="#3e2465"
-            barStyle={{backgroundColor: '#694fad'}}>
+            activeColor="#02d9c0"
+            inactiveColor="#b3acab"
+            barStyle={{backgroundColor: 'white'}}>
             <Tab.Screen
               name="QrScanner"
               component={QrScanner}
