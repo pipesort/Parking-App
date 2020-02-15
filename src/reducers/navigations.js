@@ -5,7 +5,7 @@ const reducer = function(
     action,
   ) {
     if (action.type === 'CLICKED') return {...state, isClicked: true};
-   
+    if (action.type === 'HOME') return {...state, isClicked: false};
     return state;
   };
   

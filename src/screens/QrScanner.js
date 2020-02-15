@@ -12,11 +12,13 @@ import {
 import {QRScannerRectView} from 'react-native-qrcode-scanner-view';
 import Modal from 'react-native-modal';
 import {RNCamera} from 'react-native-camera';
+import {useDispatch} from 'react-redux';
 
 function QRScanner() {
   const [isOpen, setOpen] = useState(true);
   const [isBike, setBike] = useState(false);
   const [isCar, setCar] = useState(false);
+  const dispatch = useDispatch();
   const barcodeReceived = event => {
     Alert.alert(
       'Alert Title',
@@ -51,6 +53,7 @@ function QRScanner() {
                   setOpen(!isOpen);
                   setBike(isBike);
                   setCar(isCar);
+                  dispatch({type: 'HOME'});
                 }}>
                 <View
                   style={{
@@ -69,7 +72,7 @@ function QRScanner() {
                       textAlign: 'center',
                       color: 'white',
                     }}>
-                    Go back
+                    Home
                   </Text>
                 </View>
               </TouchableOpacity>
