@@ -44,7 +44,7 @@ export default function App() {
                 tabBarLabel: 'QrScanner',
                 tabBarIcon: ({color}) => (
                   <MaterialCommunityIcons
-                    name="barcode-scan"
+                    name="qrcode-scan"
                     color={color}
                     size={25}
                   />
@@ -67,7 +67,7 @@ export default function App() {
             />
 
             <Tab.Screen
-              name="Settings"
+              name="Account"
               component={AccountPage}
               options={{
                 tabBarLabel: 'Account',

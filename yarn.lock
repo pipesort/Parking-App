@@ -5165,6 +5165,11 @@ react-native-gesture-handler@^1.5.6:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
+react-native-linear-gradient@^2.5.6:
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/react-native-linear-gradient/-/react-native-linear-gradient-2.5.6.tgz#96215cbc5ec7a01247a20890888aa75b834d44a0"
+  integrity sha512-HDwEaXcQIuXXCV70O+bK1rizFong3wj+5Q/jSyifKFLg0VWF95xh8XQgfzXwtq0NggL9vNjPKXa016KuFu+VFg==
+
 react-native-modal@^11.5.3:
   version "11.5.3"
   resolved "https://registry.yarnpkg.com/react-native-modal/-/react-native-modal-11.5.3.tgz#28b4c761680a165eaf1d2c0fb08e272c0191b39f"
@@ -5182,12 +5187,27 @@ react-native-paper@^3.6.0:
     color "^3.1.2"
     react-native-safe-area-view "^0.14.6"
 
+react-native-pipesort-component@^1.2.12:
+  version "1.2.12"
+  resolved "https://registry.yarnpkg.com/react-native-pipesort-component/-/react-native-pipesort-component-1.2.12.tgz#bbf403d30c7c9ebd76ce4cf6381388c6651ceccc"
+  integrity sha512-MThJ1Fduif6EfRJxQHzewld5R+29xGkpb7dWs939Ad/2vfeqeyY/XGhagaR0GjIOF60Rx1gWNW9+1CNXjtFALw==
+  dependencies:
+    react "16.9.0"
+    react-native "0.61.5"
+    react-native-linear-gradient "^2.5.6"
+    react-native-raw-bottom-sheet "^2.0.6"
+
 react-native-qrcode-scanner-view@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/react-native-qrcode-scanner-view/-/react-native-qrcode-scanner-view-2.0.0.tgz#327d3106a93bc297134393f11693977809801a2f"
   integrity sha512-HIFsdkV8CsqmO0Hdxoaq/ZdWbfzz4Si+gG1zoXZNMT2SzArsNfgJxyP4/TAnkjglkday339MitSuQNjgQSheDA==
   dependencies:
     prop-types "^15.7.2"
+
+react-native-raw-bottom-sheet@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/react-native-raw-bottom-sheet/-/react-native-raw-bottom-sheet-2.0.6.tgz#485dedc3e1828f2d55179bb598ef58987c41ebf1"
+  integrity sha512-DLH97BjJEl4BfNgxPVhqwwNxv1i6Cna1Ns0DWtfqLlMEJeR9K7rrwnDndB2vN5Sk0FeV8Cjt/lk20oCSI+v21g==
 
 react-native-reanimated@^1.7.0:
   version "1.7.0"
