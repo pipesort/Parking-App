@@ -65,7 +65,7 @@ function AccountPage() {
           marginTop: -50,
         }}>
         <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
-          <Text style={{fontSize: 20}}>My Balance</Text>
+          <Text style={{fontSize: 20, fontWeight: 'bold'}}>My Balance</Text>
           <Text style={{fontSize: 20, fontWeight: 'bold'}}>Rs.814.00</Text>
         </View>
 
