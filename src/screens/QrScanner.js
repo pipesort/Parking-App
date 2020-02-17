@@ -21,8 +21,6 @@ function QRScanner({navigation}) {
     console.log('Type: ' + event.type + '\nData: ' + event.data)
     const param = 'Type: ' + event.type + '\nData: ' + event.data
     navigation.navigate('Receipt', {
-      itemId: 86,
-      otherParam: 'anything you want here',
       param
     });
   };
@@ -35,28 +33,7 @@ function QRScanner({navigation}) {
           onBarCodeRead={barcodeReceived}
           scanBarAnimateReverse>
           <QRScannerRectView hintText="" />
-          <TouchableOpacity
-            onPress={() => {
-              // dispatch({type: 'HOME'});  
-              navigation.navigate('Receipt', {
-                itemId: 86,
-                otherParam: 'anything you want here',
-                
-              });   
-            }}>
-            <View
-              style={{
-                justifyContent: 'center',
-                alignItems: 'center',
-                marginBottom: 10,
-                flexDirection: 'row',
-              }}>
-              <MaterialCommunityIcons name="home" color={'white'} size={20} />
-              <Text style={{color: 'white', fontSize: 20, fontWeight: 'bold'}}>
-                Back
-              </Text>
-            </View>
-          </TouchableOpacity>
+         
         </RNCamera>
       </>
     </SafeAreaView>
