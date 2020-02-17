@@ -20,7 +20,7 @@ export default function App() {
   console.log('isClicked', isClicked);
   return (
     <>
-      {isClicked == false ? (
+      {/* {isClicked == false ? (
         <NavigationContainer>
           <Stack.Navigator>
             <Stack.Screen
@@ -30,7 +30,7 @@ export default function App() {
             />
           </Stack.Navigator>
         </NavigationContainer>
-      ) : (
+      ) : ( */}
         <NavigationContainer>
           <Tab.Navigator
             initialRouteName="Home"
@@ -82,7 +82,7 @@ export default function App() {
             />
           </Tab.Navigator>
         </NavigationContainer>
-      )}
+      {/* )} */}
     </>
   );
 }

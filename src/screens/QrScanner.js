@@ -18,7 +18,13 @@ function QRScanner({navigation}) {
   const dispatch = useDispatch();
 
   const barcodeReceived = event => {
-    navigation.navigate('Receipt');
+    console.log('Type: ' + event.type + '\nData: ' + event.data)
+    const param = 'Type: ' + event.type + '\nData: ' + event.data
+    navigation.navigate('Receipt', {
+      itemId: 86,
+      otherParam: 'anything you want here',
+      param
+    });
   };
 
   return (
@@ -31,7 +37,12 @@ function QRScanner({navigation}) {
           <QRScannerRectView hintText="" />
           <TouchableOpacity
             onPress={() => {
-              dispatch({type: 'HOME'});
+              // dispatch({type: 'HOME'});  
+              navigation.navigate('Receipt', {
+                itemId: 86,
+                otherParam: 'anything you want here',
+                
+              });   
             }}>
             <View
               style={{
