@@ -5,6 +5,14 @@ import {CardSlider} from 'react-native-pipesort-component';
 function AccountPage() {
   const cardItems = [
     {
+      title: 'Coupons',
+      description: 'Coming soon',
+      backgroundImage: {
+        uri:
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTMZjT7fIA2u6NeYso9kv8QlZI2htkCUV4FuHSjdxXID2E58NKh',
+      },
+    },
+    {
       title: 'Malls',
       description: 'Coming soon',
       backgroundImage: {
@@ -20,14 +28,7 @@ function AccountPage() {
           'https://th.thgim.com/news/national/tamil-nadu/article22788310.ece/alternates/FREE_435/18THMALLPHOTO',
       },
     },
-    {
-      title: 'Coupons',
-      description: 'Coming soon',
-      backgroundImage: {
-        uri:
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTMZjT7fIA2u6NeYso9kv8QlZI2htkCUV4FuHSjdxXID2E58NKh',
-      },
-    },
+  
   ];
   return (
     <>

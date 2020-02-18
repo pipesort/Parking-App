@@ -1,18 +1,21 @@
-import React, {useState} from 'react';
+import React, {useEffect} from 'react';
 import {Text, View, TouchableOpacity, ImageBackground} from 'react-native';
 import {useDispatch} from 'react-redux';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 function HomeScreen({navigation}) {
   const dispatch = useDispatch();
+  useEffect(() => {
+    setTimeout(() => {
+      dispatch({type: 'CLICKED'});
+    }, 1000);
+  });
   return (
     <ImageBackground
-      source={{
-        uri:
-          'https://images.wallpaperscraft.com/image/escalator_lights_stairs_131787_938x1668.jpg',
-      }}
+      source={require('../assets/images/splash.jpeg')
+       }
       style={{width: '100%', height: '100%', borderRadius: 20}}>
-      <View
+      {/* <View
         style={{
           flex: 1,
           flexDirection: 'row',
@@ -79,7 +82,7 @@ function HomeScreen({navigation}) {
             </Text>
           </View>
         </TouchableOpacity>
-      </View>
+      </View> */}
     </ImageBackground>
   );
 }

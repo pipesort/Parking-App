@@ -22,6 +22,20 @@ const date = new Date()
       exitDate:  date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate(),
       exitTime:  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
     },
+    {
+      id:route.params? route.params.param :'003',
+      entryDate: date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate(),
+      entryTime:  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
+      exitDate:  date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate(),
+      exitTime:  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
+    },
+    {
+      id:route.params? route.params.param :'004',
+      entryDate: date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate(),
+      entryTime:  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
+      exitDate:  date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate(),
+      exitTime:  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
+    },
   ];
 
   return (
