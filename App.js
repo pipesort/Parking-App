@@ -35,15 +35,15 @@ export default function App() {
       ) : (
         <NavigationContainer>
           <Tab.Navigator
-            initialRouteName="Home"
+            initialRouteName= "Qr Scanner"
             activeColor="#02d9c0"
             inactiveColor="#b3acab"
             barStyle={{backgroundColor: 'white'}}>
             <Tab.Screen
-              name="QrScanner"
+              name="Qr Scanner"
               component={QrScanner}
               options={{
-                tabBarLabel: 'QrScanner',
+                tabBarLabel: 'Qr Scanner',
                 tabBarIcon: ({color}) => (
                   <MaterialCommunityIcons
                     name="qrcode-scan"

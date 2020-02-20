@@ -1016,6 +1016,11 @@
   dependencies:
     shortid "^2.2.15"
 
+"@thalesness/react-native-canvas-scratch-card@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@thalesness/react-native-canvas-scratch-card/-/react-native-canvas-scratch-card-0.0.6.tgz#35377fdc5d761ad518455eb58dc7d8d77b3c677f"
+  integrity sha512-N2bRu7qADjfhBdvPfQuaNQgsNGmNfn4+BGVh10P7ZUcZakUVRbgqKzFXL1E7xilGNUTHxNpV+M5naQZK+IgRoA==
+
 "@types/babel__core@^7.1.0":
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.3.tgz#e441ea7df63cd080dfcd02ab199e6d16a735fc30"
@@ -5225,6 +5230,18 @@ react-native-safe-area-view@^0.14.6:
   integrity sha512-MtRSIcZNstxv87Jet+UsPhEd1tpGe8cVskDXlP657x6rHpSrbrc+y13ZNXrwAgGNNhqQNX7UJT68ZIq//ZRmvw==
   dependencies:
     hoist-non-react-statics "^2.3.1"
+
+react-native-scratch-card@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-scratch-card/-/react-native-scratch-card-1.1.0.tgz#07f3b8be7681e490431699ca63264d602b2f702d"
+  integrity sha512-gxlMqPr7fUfcusCvnf4iwKj4kdSZQXNBYUe73K3MsRxIzGaDWKgNiXbijEgqVWZfHeLsfdSBCR28oiHh/vd4GA==
+
+react-native-scratch-view@^0.0.3-rc.3:
+  version "0.0.3-rc.3"
+  resolved "https://registry.yarnpkg.com/react-native-scratch-view/-/react-native-scratch-view-0.0.3-rc.3.tgz#6d941e33725db2813b1cb969908dbf557f887de6"
+  integrity sha512-50zJ4ocGEIb0nnE6drcH3z2pHZA1g5rNfOrz4qZzW5l9pmqrSGVd/0uGyCa0lyhsib23x2Zu6WHnOPXmMcU61Q==
+  dependencies:
+    prop-types "^15.7.2"
 
 react-native-screens@^2.0.0-beta.4:
   version "2.0.0-beta.4"

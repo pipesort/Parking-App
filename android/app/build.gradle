@@ -193,6 +193,9 @@ signingConfig signingConfigs.release
 }
 
 dependencies {
+    implementation project(':@thalesness_react-native-canvas-scratch-card')
+    implementation project(':react-native-scratch-view')
+    implementation project(':react-native-scratch-card')
     implementation project(':react-native-camera')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules

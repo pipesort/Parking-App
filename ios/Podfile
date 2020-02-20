@@ -38,6 +38,8 @@ target 'parkingapp' do
 
   pod 'react-native-camera', :path => '../node_modules/react-native-camera'
 
+  pod 'ScratchView', :path => '../node_modules/react-native-scratch-view'
+
   target 'parkingappTests' do
     inherit! :search_paths
     # Pods for testing

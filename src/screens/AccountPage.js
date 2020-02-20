@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, Image, TouchableOpacity} from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import {CardSlider} from 'react-native-pipesort-component';
+import {CardSlider, SelectBox} from 'react-native-pipesort-component';
 function AccountPage() {
   const cardItems = [
     {
