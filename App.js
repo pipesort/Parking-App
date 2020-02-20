@@ -7,6 +7,8 @@ import QrScanner from './src/screens/QrScanner';
 import ReceiptPage from './src/screens/ReceiptPage';
 import AccountPage from './src/screens/AccountPage';
 import HomeScreen from './src/screens/HomeScreen';
+import Rewards from './src/screens/Rewards';
+import Locator from './src/screens/StoreLocator';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {useSelector} from 'react-redux';
 import {enableScreens} from 'react-native-screens';
@@ -65,7 +67,34 @@ export default function App() {
                 ),
               }}
             />
-
+            <Tab.Screen
+              name="Rewards"
+              component={Rewards}
+              options={{
+                tabBarLabel: 'Rewards',
+                tabBarIcon: ({color}) => (
+                  <MaterialCommunityIcons
+                    name="coin"
+                    color={color}
+                    size={25}
+                  />
+                ),
+              }}
+            />
+            <Tab.Screen
+              name="Locator"
+              component={Locator}
+              options={{
+                tabBarLabel: 'Store Locator',
+                tabBarIcon: ({color}) => (
+                  <MaterialCommunityIcons
+                    name="map-marker-path"
+                    color={color}
+                    size={25}
+                  />
+                ),
+              }}
+            />
             <Tab.Screen
               name="Account"
               component={AccountPage}
@@ -82,7 +111,7 @@ export default function App() {
             />
           </Tab.Navigator>
         </NavigationContainer>
-       )} 
+      )}
     </>
   );
 }

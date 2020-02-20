@@ -5187,10 +5187,10 @@ react-native-paper@^3.6.0:
     color "^3.1.2"
     react-native-safe-area-view "^0.14.6"
 
-react-native-pipesort-component@^1.2.12:
-  version "1.2.12"
-  resolved "https://registry.yarnpkg.com/react-native-pipesort-component/-/react-native-pipesort-component-1.2.12.tgz#bbf403d30c7c9ebd76ce4cf6381388c6651ceccc"
-  integrity sha512-MThJ1Fduif6EfRJxQHzewld5R+29xGkpb7dWs939Ad/2vfeqeyY/XGhagaR0GjIOF60Rx1gWNW9+1CNXjtFALw==
+react-native-pipesort-component@^1.2.25:
+  version "1.2.25"
+  resolved "https://registry.yarnpkg.com/react-native-pipesort-component/-/react-native-pipesort-component-1.2.25.tgz#8f0a5c243d591cf14175e6057dfd0bff20751297"
+  integrity sha512-UP141nEyk6NsXkkFEuWv8d2+RNPIgcx87S0QNT4/e46hzHvBOzixXFgi/Rcy7qbZhi55qBSuPDx8YfDnxKIz9A==
   dependencies:
     react "16.9.0"
     react-native "0.61.5"
