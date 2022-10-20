@@ -24,7 +24,7 @@
     "react-native-paper": "^3.6.0",
     "react-native-pipesort-component": "^1.2.25",
     "react-native-qrcode-scanner-view": "^2.0.0",
-    "react-native-reanimated": "^1.7.0",
+    "react-native-reanimated": "^2.10.0",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-scratch-card": "^1.1.0",
     "react-native-scratch-view": "^0.0.3-rc.3",
